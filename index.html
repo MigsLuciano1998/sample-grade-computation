@@ -84,7 +84,7 @@
                 let grade = eval(expression);
                 let finalGrade = Math.round(grade);
                 let color = finalGrade <= 75 ? 'red' : 'green';
-                document.getElementById('result').innerHTML = `<h1>Final Grade: <span class="${color}">${grade}</span></h1>`;
+                document.getElementById('result').innerHTML = `<h1>Final Grade: <span class="${color}">${finalGrade}</span></h1>`;
             } catch (error) {
                 document.getElementById('result').innerHTML = '<h1>An error occurred. Please check the formula correctly.</h1>';
             }
